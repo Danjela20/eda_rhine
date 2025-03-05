@@ -7,5 +7,5 @@ runoff_stations[, id := factor(id)]
 runoff_stations[, lat := round(lat, 3)]
 runoff_stations[, lon := round(lon, 3)]
 runoff_stations[, altitude := round(altitude, 0)]
-
+saveRDS(runoff_stations, './code/runoff_stations_raw.rds')
 saveRDS(runoff_stations, './data/runoff_stations_raw.rds')
